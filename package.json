@@ -1,0 +1,11 @@
+{
+  "name": "resultsnode",
+  "version": "1.0.0",
+  "description": "Results calculation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sakar Baral",
+  "license": "ISC"
+}
