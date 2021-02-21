@@ -1,0 +1,90 @@
+<%- include('top.ejs'); %>
+
+form {
+    margin-left: 400px;
+}
+
+<!-- .form-control {
+    width: 500px;
+} -->
+
+h2 {
+    color: darkorange;
+}
+
+</style>
+
+<body>
+    <!-- <section class="main-sec"> -->
+        <form action="/input" method="POST" >
+            <h2>For Theory</h3>
+            <%  for(var i=0;i<Theorynum ;i++){%>
+            <div class="form-group">
+            <%if(i==0){%>
+            <label for="Theory">Enter your <%=i+1%>st mark in theory</label>
+            <%}%>
+            <%if(i==1){%>
+            <label for="Theory">Enter your <%=i+1%>nd mark in theory</label>
+            <%}%>
+            <%if(i==2){%>
+            <label for="Theory">Enter your <%=i+1%>rd mark in theory</label>
+            <%}%>
+            <%if(i>=3) {%>
+            <label for="Theory">Enter your <%=i+1%>th mark in theory</label>
+            <%}%>
+            <input type="text" class="form-control" id="Thmarks" name="Thmarks<%=i%>" placeholder="Theory Marks">
+            </div>
+            
+            <%}%>
+            <%if(Projectnum!=0){%>
+                <h2>For Project</h3>
+                <%}%>
+
+            <%  for(var i=0;i<Projectnum ;i++){%>
+                <div class="form-group">
+
+                    <%if(i==0){%>
+                        <label for="Project">Enter your <%=i+1%>st mark in Project</label>
+                        <%}%>
+                        <%if(i==1){%>
+                        <label for="Project">Enter your <%=i+1%>nd mark in Project</label>
+                        <%}%>
+                        <%if(i==2){%>
+                        <label for="Project">Enter your <%=i+1%>rd mark in Project</label>
+                        <%}%>
+                        <%if(i>=3) {%>
+                        <label for="Project">Enter your <%=i+1%>th mark in Project</label>
+                        <%}%>
+                <input type="text" class="form-control" id="Pjmarks" name="Pjmarks<%=i%>" placeholder="Project Marks">
+                </div>
+                <%}%>
+                <%if(Labnum!=0){%>
+                <h2>For Lab</h3>
+                <%}%>
+
+            <%  for(var i=0;i<Labnum ;i++){%>
+            <div class="form-group">
+                <%if(i==0){%>
+                    <label for="Lab">Enter your <%=i+1%>st mark in Lab</label>
+                    <%}%>
+                    <%if(i==1){%>
+                    <label for="Lab">Enter your <%=i+1%>nd mark in Lab</label>
+                    <%}%>
+                    <%if(i==2){%>
+                    <label for="Lab">Enter your <%=i+1%>rd mark in Lab</label>
+                    <%}%>
+                    <%if(i>=3) {%>
+                    <label for="Lab">Enter your <%=i+1%>th mark in Lab</label>
+                    <%}%>
+                <input type="text" class="form-control" id="Lbmarks" name="Lbmarks<%=i%>" placeholder="Lab Marks">
+            </div>
+            <%}%>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    <!-- </section> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<%- include('top.ejs'); %>
+
+form {
+    margin-top: 80px ;
+    margin-left: 500px;
+
+}
+.form-control {
+    width: 400px;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ins {
+    margin-top: 50px;
+    text-align: center;;
+}
+
+
+</style>
+
+<body>
+    <h1>Total Marks Calculation for a subject</h1>
+    <h4 id="ins">Leave the text box empty if the component doesn't exist</h4>
+
+    
+        <form action="/main" method="post">
+            <div class="form-group">
+            <label for="Theory">Enter how many marks you want to enter in theory</label>
+            <input type="text" class="form-control" id="Theorynum" name="Theorynum" placeholder="Theory Num">
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+            <label for="Project">Enter how many marks you want to enter in Project</label>
+            <input type="text" class="form-control" id="Projectnum" name="Projectnum" placeholder="Project Num">
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <label for="Lab">Enter how many marks you want to enter in Lab </label>
+                <input type="text" class="form-control" id="Labnum" name="Labnum" placeholder="Lab Num">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+</html>

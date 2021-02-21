@@ -1,0 +1,24 @@
+
+<%- include('top.ejs'); %>
+
+body {
+    text-align:center;
+    margin-top:100px;
+}
+h3 {
+    margin-bottom:40px;
+}
+
+</style>
+
+<body>
+    <%if(lbsum!=0){%>
+    <h3> Your marks in Lab is: <%=lbsum%></h3>
+    <%}%>
+    <h3>Your marks in Theory is: <%=thsum%></h3>
+    <%if(pjsum!=0){%>
+    <h3>Your marks in Project is: <%=pjsum%></h3>
+    <%}%>
+    <h2>Your total marks is: <%=gt%></h2>
+</body>
+</html>
